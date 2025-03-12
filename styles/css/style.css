@@ -1,0 +1,145 @@
+/*design-system*/
+/*spacing system */
+/* color system*/
+/*primary colors */
+/*primary green */
+/*lighter green */
+/*darker green */
+/*secondary colors */
+/* secondary red */
+/* lighter red */
+/* darker red */
+/* natural colors (grayscale) */
+.nav-btn {
+  height: 4rem;
+  align-items: center;
+  background-color: transparent;
+  margin-top: 3rem;
+  border: none;
+}
+.nav-btn__icon {
+  position: relative;
+}
+.nav-btn__icon, .nav-btn__icon::before, .nav-btn__icon::after {
+  width: 4.5rem;
+  height: 2px;
+  background-color: #ffffff;
+  display: inline-block;
+}
+.nav-btn__icon::before, .nav-btn__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.nav-btn__icon::before {
+  top: -1.2rem;
+}
+.nav-btn__icon::after {
+  top: 1.2rem;
+}
+
+.btn {
+  background-color: #d99d60;
+  padding: 1.5rem 3.5rem;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+}
+.btn__heading {
+  text-align: left;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+}
+.btn:hover {
+  background-color: #b16d29;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  line-height: 1.7;
+  direction: ltr;
+  background-color: #ffffff;
+  font-family: "josefinSans";
+  display: flex;
+}
+
+@font-face {
+  font-family: "josefinSans";
+  src: url(/fonts/JosefinSans-Italic-VariableFont_wght.ttf);
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex: 0 0 5%;
+  background-color: #d99d60;
+}
+
+.header {
+  text-align: center;
+  background-image: linear-gradient(#003566, #000814), url(../../../img/hero.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3rem 7rem;
+}
+.header__logo {
+  width: 20rem;
+  align-self: center;
+  margin-bottom: 10rem;
+}
+.header__seenon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  font-size: 2rem;
+  color: #808080;
+  position: relative;
+}
+.header__seenon::before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #808080;
+  margin: 0 1.5rem 0 0;
+}
+.header__seenon::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #808080;
+  margin: 0 0 0 1.5rem;
+}
+.heading-3 {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #d99d60;
+}
+
+.heading-1 {
+  text-align: left;
+  font-size: 4.5rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.heading-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+/*# sourceMappingURL=style.css.map */

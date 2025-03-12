@@ -1,0 +1,48 @@
+.nav-btn{
+    height: 4rem;
+    align-items: center;
+    background-color: transparent;
+    margin-top: 3rem;
+    border: none;
+
+    &__icon{
+        position: relative;
+        &,
+        &::before,
+        &::after{
+            width: 4.5rem;
+            height: 2px;
+            background-color: #ffffff;
+            display: inline-block;
+        }
+        &::before,
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+        } 
+        &::before{
+            top: -1.2rem;
+        }
+        &::after{
+            top: 1.2rem;
+        }
+    }
+}
+.btn{
+    background-color: $color-secondary;
+    padding: 1.5rem 3.5rem;
+    border: none;
+    color: $color-white;
+    cursor: pointer;
+    display: block;
+
+    &__heading{
+        text-align: left;
+        margin-top: 3rem;
+        margin-bottom: 7rem;
+    }
+    &:hover{
+        background-color: $color-secondary-dark;
+    }
+}

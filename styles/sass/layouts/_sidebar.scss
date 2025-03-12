@@ -1,0 +1,7 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex: 0 0 5%;
+    background-color: $color-secondary;  
+}
