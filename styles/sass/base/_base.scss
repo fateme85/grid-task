@@ -17,6 +17,15 @@ html{
   direction: ltr;
   background-color: $color-white;
   font-family: 'josefinSans';
-  display: flex;
+  display: grid;
+  grid-template-columns: 5% 1fr;
+  @include responsive(tab-land){
+    grid-template-columns: 1fr;
+  }
+   
 }
-
+.content{
+  @include responsive(tab-land){
+    width: 100%;
+  }  
+}

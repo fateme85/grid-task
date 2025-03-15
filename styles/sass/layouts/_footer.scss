@@ -1,0 +1,71 @@
+.footer{
+    background-color: $color-primary;
+    width: 100%;
+    padding: 8rem;
+    @include responsive(tab-land){
+        padding: 5rem;
+    }
+    &__top{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1rem;
+        align-items: center;
+        margin-bottom: 5rem;
+        width: 100%;
+        @include responsive(tab-land){
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+        @include responsive(tab-por){
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            margin-bottom: 4rem;
+        }
+        @include responsive(phone){
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            margin-bottom: 3rem;
+        }
+        &-btn{
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            background-color: transparent;
+            color: $color-gray-light-4;
+            font-family: 'josefinSans';
+            font-size:  $spacing-xs1;
+            padding: 2rem;
+            transition: all 0.3s;
+            @include responsive(tab-por){
+                font-size:  $spacing-xs;
+                padding: 1.5rem;
+            }
+            
+            &:hover{
+                background-color: $color-primary-dark;
+                transform: translateY(-0.5rem);
+            }
+        }
+    }
+    &__text{
+        text-align: center;
+        padding: 0 12rem;
+        color: $color-gray-light-4;
+        font-size: 1.6rem;
+        @include responsive(tab-por){
+            font-size:  1.4rem;
+            padding: 0 10rem;
+        } 
+        @include responsive(tab-por){
+            font-size:  1.2rem;
+            padding: 0 6rem;
+        } 
+        @include responsive(phone){
+            font-size:  1.2rem;
+            padding: 0 ;
+        } 
+
+
+    }
+
+}

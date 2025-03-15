@@ -4,6 +4,16 @@
     background-color: transparent;
     margin-top: 3rem;
     border: none;
+    @include responsive(tab-land){
+        width: 5rem;
+        height: 5rem;
+        margin: 1rem 2rem; 
+    } 
+    @include responsive(mini-phone){
+        width: 4rem;
+        height: 4rem;
+        margin: 0.5rem 1rem; 
+    } 
 
     &__icon{
         position: relative;
@@ -14,6 +24,10 @@
             height: 2px;
             background-color: #ffffff;
             display: inline-block;
+            @include responsive(mini-phone){
+                width: 3rem;
+               
+            } 
         }
         &::before,
         &::after{
@@ -36,10 +50,18 @@
     color: $color-white;
     cursor: pointer;
     display: block;
+    @include responsive(phone){
+        padding: 1.5rem 2.5rem;
+        font-size: $spacing-xs;
+    } 
+    @include responsive(mini-phone){
+        padding: 1.5rem 2rem;
+        font-size: $spacing-xs;
+    }
 
     &__heading{
         text-align: left;
-        margin-top: 3rem;
+        margin-top: 2rem;
         margin-bottom: 7rem;
     }
     &:hover{

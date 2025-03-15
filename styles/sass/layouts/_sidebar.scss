@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    flex: 0 0 5%;
-    background-color: $color-secondary;  
+    background-color: $color-secondary;
+    @include responsive(tab-land){
+        width: 100%;
+        flex-direction: row;
+        justify-content: end;
+    }     
 }

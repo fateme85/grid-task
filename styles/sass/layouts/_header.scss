@@ -1,24 +1,59 @@
 .header{
     text-align: center;
-    background-image: linear-gradient($color-primary-light, $color-primary-dark), url(../../../img/hero.jpeg);
+    background-image: linear-gradient(rgba($color-primary-light,0.95) , rgba($color-primary-dark,0.95)), url(/img/hero.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 3rem 7rem;
+    @include responsive(mini-phone){
+        padding: 2rem 4rem;      
+     } 
     
    &__logo{
-    width: 20rem;
+    width: 15rem;
     align-self: center;
     margin-bottom: 10rem;
+    @include responsive(phone){
+       width: 12rem; 
+       margin-bottom: 8rem;       
+    }
+    @include responsive(mini-phone){
+        width: 10rem; 
+        margin-bottom: 8rem;       
+     } 
    }
    &__seenon{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
     font-size: $spacing-sm;
     color:  $color-gray;
     position: relative;
+    @include responsive(phone){
+        font-size: $spacing-xs1;         
+    } 
+    @include responsive(mini-phone){
+        font-size: $spacing-xs;         
+     } 
+
+    &-logos{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 5rem;
+        & img{
+           height: 3rem;
+           @include responsive(tab-por){
+            height: 2rem;          
+        } 
+        @include responsive(phone){
+            height: 1.5rem;          
+        } 
+        @include responsive(mini-phone){
+            height: 1rem;          
+        } 
+        }
+    }
     &::before{
         content: "";
         flex: 1;
@@ -33,20 +68,5 @@
         background-color: $color-gray;
         margin: 0 0 0 1.5rem;
     }
-   }
-   &__logos{
-
-   }
-}
-.heading-3{
-    text-align: left;
-    font-size: $spacing-sm;
-    font-weight: 400;
-    color: $color-secondary;
-}
-.heading-1{
-    text-align: left;
-    font-size: $spacing-3xl;
-    font-weight: 500;
-    color: $color-white;
+   }   
 }

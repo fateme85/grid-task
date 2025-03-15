@@ -2,3 +2,37 @@
     font-family: 'josefinSans';
     src: url(/fonts/JosefinSans-Italic-VariableFont_wght.ttf);
   }
+
+
+.heading-3{
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $color-secondary;
+    @include responsive(tab-por){
+      font-size: $spacing-xs1;
+  }
+  @include responsive(phone){
+    font-size: 1.2rem;         
+  }
+  @include responsive(mini-phone){
+    font-size: $spacing-xs;        
+  }
+}
+.heading-1{
+    text-align: left;
+    font-size: $spacing-3xl;
+    font-weight: 500;
+    color: $color-white;
+    @include responsive(tab-por){
+      font-size: $spacing-xxl;          
+    }
+    @include responsive(phone){
+      font-size: $spacing-xl; 
+      line-height: 4.5rem;         
+    } 
+    @include responsive(mini-phone){
+      font-size: $spacing-lg; 
+      line-height: 4rem;         
+    }   
+}
